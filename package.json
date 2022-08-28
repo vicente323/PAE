@@ -1,0 +1,15 @@
+{
+  "name": "gridsystem",
+  "version": "1.0.0",
+  "description": "Tarea: Grid system ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "styles": "sass    --no-source-map ./src/scss/estilos.scss   ./src/assets/css/estilos.css     "
+  },
+  "author": "Vicente Bejarano Hernandez",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.54.5"
+  }
+}
