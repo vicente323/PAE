@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,13 @@
   "bugs": {
     "url": "https://github.com/vicente323/PAE/issues"
   },
-  "homepage": "https://github.com/vicente323/PAE#readme"
+  "homepage": "https://github.com/vicente323/PAE#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "express-handlebars": "^6.0.6",
+    "handlebars": "^4.7.7"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
 }
