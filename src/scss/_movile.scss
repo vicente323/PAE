@@ -1,0 +1,22 @@
+@import "mixings";
+@media only screen and (max-width:  600px) {
+  
+    /*For movile*/
+    @for $i from 1 through 12{
+        .col-S#{$i}{
+            @include small_rule;
+            width: 8.33%*$i;
+            height: 100%;
+           // float: left;
+            box-sizing: border-box;
+            display: inline-block;
+            border: solid 1px;
+            
+        }
+    }
+  }
+
+  html, body {
+    padding:0;
+    margin:0;
+}

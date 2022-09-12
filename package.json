@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon index.js"
+    "dev": "nodemon index.js",
+    "styles": "sass    --no-source-map ./src/scss/estilos.scss   ./src/assets/css/estilos.css  "
   },
   "repository": {
     "type": "git",
@@ -23,6 +24,7 @@
     "handlebars": "^4.7.7"
   },
   "devDependencies": {
-    "nodemon": "^2.0.19"
+    "nodemon": "^2.0.19",
+    "sass": "^1.54.9"
   }
 }

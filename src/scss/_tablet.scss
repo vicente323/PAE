@@ -1,0 +1,16 @@
+@import "mixings";
+@media only screen and (min-width: 600px) {
+    /*For tablets*/
+    @for $i from 1 through 12{
+        .col-M#{$i}{
+            @include medium_rule;
+            width: 8.33%*$i;
+            height: 100%;
+           // float: left;
+            box-sizing: border-box;
+            display: inline-block;
+            border: solid 1px;
+            
+        }
+    }
+  }
