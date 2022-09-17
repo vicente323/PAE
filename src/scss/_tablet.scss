@@ -3,7 +3,7 @@
     /*For tablets*/
     @for $i from 1 through 12{
         .col-M#{$i}{
-            @include medium_rule;
+            //@include medium_rule;
             width: 8.33%*$i;
             height: 100%;
            // float: left;

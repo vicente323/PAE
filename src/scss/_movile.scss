@@ -4,7 +4,7 @@
     /*For movile*/
     @for $i from 1 through 12{
         .col-S#{$i}{
-            @include small_rule;
+            //@include small_rule;
             width: 8.33%*$i;
             height: 100%;
            // float: left;
