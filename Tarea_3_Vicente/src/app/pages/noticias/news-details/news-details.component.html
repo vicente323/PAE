@@ -1,0 +1,3 @@
+<h3 > {{noticia.title}}</h3>
+<img [src]="noticia.urlToImage" alt="" style="width:100% ;">
+<button *ngIf="noticia.title" (click)="clearNoticia()" style="display:block ; width: 100%;">Clear</button>

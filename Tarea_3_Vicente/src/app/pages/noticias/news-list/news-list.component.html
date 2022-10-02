@@ -1,0 +1,10 @@
+
+
+<ul>
+    <li  [ngClass]="{'active':current == elemento}" *ngFor="let elemento of newsList">
+        <a  (click)="selectNew(elemento)">{{elemento.title}}</a>
+    </li>
+</ul>
+
+
+<!-- para mandar info entre padre e hijo [noticia]="current"  -->
