@@ -1,0 +1,34 @@
+<h2>Listado de Noticias</h2>
+<form (submit)="buscar()">
+    <input type="text" name="buscar" placeholder="Buscar..." [(ngModel)]="search">
+    <button [disabled]="!search">Buscar</button>
+</form>
+
+<p *ngIf="cargando">Cargando....</p>
+
+<div *ngIf="noticias.length === 0">
+    <p>No hay resultados para mostrar</p>
+</div>
+
+<div *ngIf="noticias.length">
+
+    <h2>Resultados de {{lastSearch | myUpperCase}}</h2>
+    <div class="panel">
+        <div>
+            <ul>
+                <li [ngClass]="{'active': current == elemento}" *ngFor="let elemento of noticias">
+                    <!-- <a (click)="selectNoticia(elemento)">{{elemento.title}}</a> -->
+                    <input type="checkbox" checked [(ngModel)]="elemento.favorito">
+                    <a (click)="selectNoticia(elemento)" [routerLink]="elemento.title">{{elemento.title}}</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <app-noticia-details [noticia]="current" (onClear)="clearCurrent()"></app-noticia-details>
+        </div>
+    </div>
+
+</div>
+
+
+
