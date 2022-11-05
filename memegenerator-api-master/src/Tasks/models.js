@@ -1,9 +1,9 @@
 const mod= require("../../database/model")
-class User extends mod {
+class Tasks extends mod {
 
    constructor(){
-      super("users")
+   super("Tasks")
    }
 }
 
-module.exports = User;
+module.exports = Tasks;

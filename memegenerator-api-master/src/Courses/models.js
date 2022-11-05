@@ -1,8 +1,8 @@
 const mod= require("../../database/model")
 class User extends mod {
-
+    
    constructor(){
-      super("users")
+    super("Courses")
    }
 }
 

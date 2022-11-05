@@ -1,0 +1,35 @@
+@host=http://localhost:5000/api
+### Post de usuarios
+POST {{host}}/users
+Content-Type: application/json
+
+    {
+        "id":"string",
+        "name":"string",
+        "Expedient":"String",
+        "user_img":"src",
+        "description":"Generic",
+        "degree":"softawe engineering"
+    }
+
+###
+GET {{host}}/users
+
+###
+
+DELETE {{host}}/users 
+Content-Type: application/json
+
+{
+    "id":"string"
+}
+###
+
+PUT {{host}}/users 
+Content-Type: application/json
+
+{
+
+    "name":"str",
+    "name2":"Asdasdasd"
+}
