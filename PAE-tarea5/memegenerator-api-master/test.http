@@ -1,0 +1,63 @@
+@host=http://localhost:5000/api
+### Post de usuarios
+POST {{host}}/users
+Content-Type: application/json
+
+    {
+        "id":"1",
+        "name":"string",
+        "Expedient":"72",
+        "user_img":"src",
+        "description":"Generic",
+        "degree":"softawe engineering"
+    }
+
+###
+GET {{host}}/users
+
+###
+
+DELETE {{host}}/users 
+Content-Type: application/json
+
+{
+    "id":"string"
+}
+###
+
+PUT {{host}}/users 
+Content-Type: application/json
+
+{
+
+    "name":"str123123",
+    "name2":"Asdasdasd"
+}
+###
+
+POST {{host}}/users/login
+Content-Type: application/json
+    
+    {   
+        "Expedient":"728106",
+        "password":"123123123"
+    }
+
+
+###
+
+GET {{host}}/users/loginValidate
+Content-Type: application/json
+
+{
+    "token":""
+}
+###
+
+GET {{host}}/courses
+Content-Type: application/json
+
+{
+    "token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFeHBlZGllbnQiOiI3MjgxMDYiLCJpYXQiOjE2Njc4NzU3MjIsImV4cCI6MTY2Nzg3NjAyMn0.RF87wPDGl24U1F2Xx2Jhyz5yl-ujLq9G2MM2rpD_hdc"
+}
+
